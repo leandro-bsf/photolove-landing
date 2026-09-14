@@ -87,9 +87,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">Suporte</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">WhatsApp</a></li>
-              <li><Link href="/central-ajuda" className="transition-colors hover:text-white">Central de Ajuda</Link></li>
-            </ul>
+              <li><a href="https://wa.me/5546991413884" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">WhatsApp</a></li>
+           </ul>
           </div>
 
           <div className="space-y-4">

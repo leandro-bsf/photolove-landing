@@ -17,7 +17,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm md:text-base leading-relaxed text-slate-400">
-              A plataforma definitiva para fotógrafos entregarem galerias, organizarem ensaios e encantarem clientes de forma profissional.
+            A plataforma para fotógrafos entregarem, selecionarem e venderem suas fotos em um só lugar.
             </p>
           </div>
 

@@ -18,6 +18,10 @@ const faqData: FaqItem[] = [
     question: "Meus clientes precisam criar conta?",
     answer: "Não! Seus clientes acessam as fotos apenas com um link e senha, sem precisar criar conta. Isso torna a experiência muito mais simples e rápida.",
   },
+   {
+    question: "Preciso cadastrar o cartão para testar?",
+    answer: "30 dias grátis. Sem cartão. Sem compromisso.",
+  },
   {
     question: "Como envio minhas fotos?",
     answer: "Você pode fazer upload das fotos diretamente pela plataforma, organizando tudo por ensaio. O processo é rápido e pensado para facilitar seu fluxo de trabalho.",
@@ -25,6 +29,10 @@ const faqData: FaqItem[] = [
   {
     question: "Posso proteger meus ensaios com senha?",
     answer: "Sim! Você pode definir senhas para cada ensaio, garantindo que apenas pessoas autorizadas tenham acesso às fotos.",
+  },
+  {
+    question: "E se meu cliente não souber usar?",
+    answer: "Não precisa instalar nada. Seu cliente recebe um link personalizado e acessa a galeria diretamente pelo celular ou computador.",
   },
   {
     question: "O cliente pode baixar todas as fotos de uma vez?",

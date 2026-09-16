@@ -57,14 +57,13 @@ export default function Hero() {
 
             {/* TÍTULO */}
             <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              Sua entrega de fotos profissional{" "}
-              <span className="text-blue-600">começa aqui.</span>
+             Ainda entrega suas fotos pelo{" "}
+              <span className="text-blue-600"> WhatsApp ou Drive?</span>
             </h1>
 
             {/* SUBTÍTULO */}
             <p className="mt-6 text-lg leading-relaxed text-slate-600 md:text-xl">
-              Organize ensaios, encante clientes com seleções fáceis e valorize o seu trabalho com galerias personalizadas.
-            </p>
+            Organize, entregue, receba seleções e venda fotos extras em um único lugar.  </p>
 
             {/* BOTÃO E BENEFÍCIOS */}
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
@@ -114,9 +113,13 @@ export default function Hero() {
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-500 shadow-sm">
                 <Star size={20} className="fill-amber-400 text-amber-400" />
               </div>
-              <div>
-                <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Avaliação</p>
-                <p className="text-sm font-bold text-slate-800">5.0 ⭐ de aprovação</p>
+             <div>
+                <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
+                  EXPERIÊNCIA PROFISSIONAL
+                </p>
+                <p className="text-sm font-bold text-slate-800">
+                  Entrega, seleção e venda
+                </p>
               </div>
             </div>
 

@@ -39,29 +39,33 @@ const problems = [
       "Quanto mais processos manuais, mais tempo você leva para finalizar cada trabalho.",
   },
 ];
-
 const solutions = [
   {
     number: "01",
     title: "Crie seu ensaio",
-    description: "Organize todas as informações em um único painel.",
+    description:
+      "Tenha clientes, fotos e informações do ensaio organizados em um só lugar.",
   },
   {
     number: "02",
     title: "Envie suas fotos",
-    description: "Compartilhe uma experiência profissional com seu cliente.",
+    description:
+      "Crie uma galeria profissional e entregue suas fotos sem depender do WhatsApp ou Drive.",
   },
   {
     number: "03",
-    title: "Receba a seleção",
-    description: "Seu cliente escolhe as fotos de forma simples e intuitiva.",
+    title: "Seu cliente escolhe",
+    description:
+      "O cliente seleciona as fotos pelo celular e você recebe tudo organizado, sem precisar acompanhar manualmente.",
   },
   {
     number: "04",
     title: "Venda e entregue",
-    description: "Gerencie pedidos e finalize seu trabalho com mais tranquilidade.",
+    description:
+      "Venda fotos extras, acompanhe os pedidos e finalize a entrega sem retrabalho.",
   },
 ];
+
 
 export default function Problem() {
   return (

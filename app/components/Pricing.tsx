@@ -16,6 +16,7 @@ interface Plan {
   monthlyPrice: number;
   annualMonthlyPrice: number; // Valor equivalente por mês no plano anual
   annualTotal: number;
+  slogan:  string,
   discount: string;
   popular?: boolean;
   features: PlanFeature[];
@@ -24,9 +25,10 @@ interface Plan {
 const plans: Plan[] = [
   {
     id: "essential",
-    name: "Essential Plan",
+    name: "Essential",
     icon: <Zap className="w-6 h-6 text-purple-600" />,
     monthlyPrice: 29.90,
+    slogan: "Para começar a profissionalizar suas entregas",
     annualMonthlyPrice: 26.00,
     annualTotal: 312.00,
     discount: "13% OFF",
@@ -45,9 +47,10 @@ const plans: Plan[] = [
   },
   {
     id: "advanced",
-    name: "Advanced Plan",
+    name: "Advanced",
     icon: <Leaf className="w-6 h-6 text-emerald-600" />,
     monthlyPrice: 49.90,
+    slogan: "Para quem já faz ensaios todos os meses",
     annualMonthlyPrice: 42.33,
     annualTotal: 508.00,
     discount: "15% OFF",
@@ -67,9 +70,10 @@ const plans: Plan[] = [
   },
   {
     id: "master",
-    name: "Master Plan",
+    name: "Master",
     icon: <Crown className="w-6 h-6 text-purple-600" />,
     monthlyPrice: 99.90,
+    slogan: "Para quem quer vender e escalar",
     annualMonthlyPrice: 82.91,
     annualTotal: 995.00,
     discount: "17% OFF",
@@ -190,6 +194,7 @@ export default function Pricing() {
                       {plan.icon}
                     </div>
                     <h3 className="text-xl font-bold text-slate-900">{plan.name}</h3>
+                    <p className="mt-2 min-h-[40px] text-sm leading-relaxed text-slate-500"> {plan.slogan}</p>
                   </div>
 
                   {/* Preço com Animação na troca */}

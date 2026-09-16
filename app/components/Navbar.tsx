@@ -27,7 +27,7 @@ export default function Navbar() {
         >
           <div className="relative flex items-center h-8 md:h-10 overflow-hidden">
             <Image
-              src="/images/logo2.png"
+              src="/images/logo.png"
               alt="Photo Love"
               width={140}
               height={45}

@@ -8,7 +8,7 @@ import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
-
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -25,6 +25,7 @@ export default function Home() {
      
       </main>
       <Footer />
+      <WhatsAppButton />
 
     </>
   );

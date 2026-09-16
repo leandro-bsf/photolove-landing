@@ -10,49 +10,15 @@ import {
   ShieldCheck,
   ShoppingBag,
 } from "lucide-react";
-
 const recursos = [
   {
-    titulo: "GESTÃO COMPLETA DE ENSAIOS",
-    subtitulo: "Organize, controle e entregue com perfeição.",
-    descricao:
-      "Tenha todos os seus ensaios em um só painel simples, rápido e profissional.",
-    imagem: "/images/ensaio.jpg",
-    icone: Layers3,
-    slogan:    "Organização, Controle e  Entregua.", 
-    beneficios: [
-      "Acompanhe cada etapa com facilidade",
-      "Ganhe tempo e evite retrabalho",
-      "Automatize sua rotina",
-      "Transmita mais profissionalismo",
-      "Deixe tudo sob seu controle",
-    ],
-  },
-  {
-    titulo: "SELEÇÃO DE FOTOS",
-    subtitulo:
-      "Transforme a escolha de fotos em uma experiência incrível.",
-    descricao:
-      "Envie um link exclusivo e permita que seus clientes escolham suas fotos preferidas com poucos cliques.",
-    imagem: "/images/entrega.png",
-    icone: ImageIcon,
-     slogan:    "Facilidade e Praticidade", 
-    beneficios: [
-      "Seleção fácil e intuitiva",
-      "Zero confusão e mensagens trocadas",
-      "Mais rapidez na entrega final",
-      "Link protegido por senha",
-      "Impressione seus clientes com praticidade",
-    ],
-  },
-  {
-    titulo: "VENDA POR PACOTE OU FOTOS INDIVIDUAIS",
+    titulo: "VENDA POR PACOTE OU FOTOS EXTRAS",
     subtitulo: "Mais liberdade, mais lucro.",
     descricao:
-      "Ofereça opções de compra flexíveis e aumente suas vendas com facilidade.",
+      "Ofereça opções de compra flexíveis e aumente suas vendas com facilidade, permitindo que clientes levem fotos extras.",
     imagem: "/images/tipo_ensaio.png",
     icone: ShoppingBag,
-    slogan:"Venda do seu jeito, lucre mais.", 
+    slogan: "Venda do seu jeito, lucre mais.",
     beneficios: [
       "Venda pacotes ou fotos avulsas",
       "Mais opções para seus clientes",
@@ -62,13 +28,13 @@ const recursos = [
     ],
   },
   {
-    titulo: "PROTEJA SUAS FOTOS COM MARCA D'ÁGUA EXCLUSIVA",
+    titulo: "PROTEJA SUAS FOTOS COM MARCA D'ÁGUA",
     subtitulo: "Proteja seu trabalho e fortaleça sua marca.",
     descricao:
       "Aplique sua marca d’água automaticamente e garanta segurança em cada clique.",
     imagem: "/images/marca-dagua.png",
     icone: ShieldCheck,
-     slogan:"Segurança e Controle", 
+    slogan: "Segurança e Controle",
     beneficios: [
       "Evite cópias não autorizadas",
       "Mostre profissionalismo em cada imagem",
@@ -78,13 +44,29 @@ const recursos = [
     ],
   },
   {
-    titulo: "RELATÓRIOS COMPLETOS DE VENDAS",
+    titulo: "GESTÃO E ORGANIZAÇÃO DE ENSAIOS",
+    subtitulo: "Organize, controle e entregue com perfeição.",
+    descricao:
+      "Tenha todos os seus ensaios em um só painel simples, rápido e profissional.",
+    imagem: "/images/ensaio.jpg",
+    icone: Layers3,
+    slogan: "Organização, Controle e Entrega.",
+    beneficios: [
+      "Acompanhe cada etapa com facilidade",
+      "Ganhe tempo e evite retrabalho",
+      "Automatize sua rotina",
+      "Transmita mais profissionalismo",
+      "Deixe tudo sob seu controle",
+    ],
+  },
+  {
+    titulo: "RELATÓRIOS E RESULTADOS",
     subtitulo: "Entenda seus números e cresça com estratégia.",
     descricao:
       "Descubra quais ensaios mais vendem, acompanhe resultados e veja seu faturamento crescer.",
     imagem: "/images/relatorio.jpg",
     icone: BarChart3,
-    slogan:"Venda do seu jeito. Lucre ainda mais.", 
+    slogan: "Acompanhe seus resultados.",
     beneficios: [
       "Acompanhe vendas em tempo real",
       "Gráficos claros e interativos",
@@ -94,7 +76,6 @@ const recursos = [
     ],
   },
 ];
-
 export default function Features() {
   return (
     <section

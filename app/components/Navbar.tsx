@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { getAppRegisterUrl } from "../tracking";
 
 const menuItems = [
   { label: "Início", href: "#inicio" },
@@ -54,14 +55,14 @@ export default function Navbar() {
         {/* Ações Desktop */}
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href="https://app.photolove.com.br/login"
+            onClick={() => window.location.href = getAppRegisterUrl()}
             className="rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-blue-600"
           >
             Entrar
           </a>
 
           <a
-            href="https://app.photolove.com.br/cadastro"
+           onClick={() => window.location.href = getAppRegisterUrl()}
             className="group flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/30"
           >
             Comece grátis
@@ -107,16 +108,22 @@ export default function Navbar() {
                 <div className="my-2 h-px bg-slate-100" />
 
                 <a
-                  href="https://app.photolove.com.br/login"
-                  onClick={() => setMenuOpen(false)}
+                  href="https://app.photolove.com.br/cadastro"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = getAppRegisterUrl();
+                  }}
                   className="rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
                 >
                   Entrar
                 </a>
 
                 <a
-                  href="https://app.photolove.com.br/login"
-                  onClick={() => setMenuOpen(false)}
+                  href="https://app.photolove.com.br/cadastro"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = getAppRegisterUrl();
+                }}
                   className="mt-1 flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
                 >
                   Comece grátis

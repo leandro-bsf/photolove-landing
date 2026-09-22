@@ -1,6 +1,7 @@
 "use client";
 
 import { Sparkles, ArrowRight } from "lucide-react";
+import { getAppRegisterUrl } from "../tracking";
 
 export default function FinalCTA() {
   return (
@@ -36,7 +37,7 @@ export default function FinalCTA() {
         {/* Botão de Ação (CTA Principal) */}
         <div className="mt-10 flex flex-col items-center justify-center">
           <a
-            href="https://app.photolove.com.br/login"
+            onClick={() => window.location.href = getAppRegisterUrl()}
             className="group inline-flex items-center gap-3 rounded-2xl bg-cyan-400 px-8 py-5 text-base font-bold text-slate-950 shadow-xl shadow-cyan-400/20 transition-all duration-300 hover:bg-cyan-300 hover:scale-105 active:scale-95"
           >
             <span>🚀 Começar grátis</span>

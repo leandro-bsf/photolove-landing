@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, X, Zap, Leaf, Crown, Sparkles } from "lucide-react";
+import { getAppRegisterUrl } from "../tracking";
 
 interface PlanFeature {
   name: string;
@@ -267,7 +268,7 @@ export default function Pricing() {
                 {/* Botão de Assinar */}
                 <div className="mt-10">
                   <a
-                    href="https://app.photolove.com.br/login"
+                    onClick={() => window.location.href = getAppRegisterUrl()}
                     className="flex w-full items-center justify-center rounded-2xl bg-cyan-400 px-6 py-4 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-400/20 transition-all hover:bg-cyan-300 hover:shadow-cyan-400/30 active:scale-[0.98]"
                   >
                     Assinar

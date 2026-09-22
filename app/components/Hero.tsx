@@ -2,6 +2,7 @@
 
 import { ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
+import { getAppRegisterUrl } from "../tracking";
 
 export default function Hero() {
   return (
@@ -69,7 +70,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
               {/* CTA principal com transição fluida do Tailwind */}
               <a
-                href="https://app.photolove.com.br/login"
+                onClick={() => window.location.href = getAppRegisterUrl()}
                 className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-950 px-8 py-4 text-base font-semibold text-white shadow-xl shadow-slate-950/20 transition-all duration-300 hover:bg-blue-600 hover:shadow-blue-600/30 hover:-translate-y-1 active:translate-y-0"
               >
                 Começar agora gratuitamente

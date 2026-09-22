@@ -10,6 +10,7 @@ import {
   ShieldCheck,
   ShoppingBag,
 } from "lucide-react";
+import { getAppRegisterUrl } from "../tracking";
 const recursos = [
   {
     titulo: "VENDA POR PACOTE OU FOTOS EXTRAS",
@@ -175,7 +176,7 @@ export default function Features() {
                   {/* CTA Interativo */}
                   <div className="mt-8">
                     <a
-                      href="https://app.photolove.com.br/login"
+                      onClick={() => window.location.href = getAppRegisterUrl()}
                       className="group/btn inline-flex items-center gap-2 font-semibold text-blue-600 transition-all hover:text-blue-700"
                     >
                       <span>Comece grátis</span>

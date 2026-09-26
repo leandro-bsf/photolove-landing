@@ -11,6 +11,7 @@ const menuItems = [
   { label: "Funcionalidades", href: "#recursos" },
   { label: "Planos", href: "#precos" },
   { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Blog", href: "https://blog.photolove.com.br/" },
 
 ];
 
@@ -39,17 +40,19 @@ export default function Navbar() {
         </a>
 
         {/* Menu Desktop */}
-        <div className="hidden items-center gap-7 lg:gap-9 md:flex">
-          {menuItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="group relative text-sm font-medium text-slate-600 transition-colors hover:text-blue-600"
-            >
-              {item.label}
-              <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full" />
-            </a>
-          ))}
+        <div className="hidden items-center gap-4 lg:gap-4 md:flex">
+         {menuItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                target={item.label === "Blog" ? "_blank" : undefined}
+                rel={item.label === "Blog" ? "noopener noreferrer" : undefined}
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-blue-600"
+              >
+                {item.label}
+              </a>
+            ))}
         </div>
 
         {/* Ações Desktop */}

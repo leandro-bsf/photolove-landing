@@ -81,6 +81,8 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li><Link href="#depoimentos" className="transition-colors hover:text-white">Depoimentos</Link></li>
               <li><Link href="#faq" className="transition-colors hover:text-white">Dúvidas Frequentes</Link></li>
+             <li><Link    rel="noopener noreferrer" target="_blank" href="https://blog.photolove.com.br" className="transition-colors hover:text-white">Blog</Link></li>
+          
             </ul>
           </div>
 

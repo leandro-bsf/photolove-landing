@@ -34,7 +34,7 @@ const plans: Plan[] = [
     annualTotal: 312.00,
     discount: "13% OFF",
     features: [
-      { name: "5GB de Armazenamento", included: true },
+      { name: "30GB de Armazenamento", included: true },
       { name: "Gestão de ensaios", included: true },
       { name: "Gestão de vendas", included: false },
       { name: "Seleção online", included: true },
@@ -57,7 +57,7 @@ const plans: Plan[] = [
     discount: "15% OFF",
     popular: true,
     features: [
-      { name: "15GB de Armazenamento", included: true },
+      { name: "50GB de Armazenamento", included: true },
       { name: "Gestão de ensaios", included: true },
       { name: "Gestão de vendas", included: true },
       { name: "Seleção online", included: true },
@@ -79,7 +79,7 @@ const plans: Plan[] = [
     annualTotal: 995.00,
     discount: "17% OFF",
     features: [
-      { name: "100GB de Armazenamento", included: true },
+      { name: "150GB de Armazenamento", included: true },
       { name: "Gestão de ensaios", included: true },
       { name: "Gestão de vendas", included: true },
       { name: "Seleção online", included: true },

@@ -58,7 +58,9 @@ export default function Navbar() {
         {/* Ações Desktop */}
         <div className="hidden items-center gap-3 md:flex">
           <a
-            onClick={() => window.location.href = getAppRegisterUrl()}
+            href = 'https://app.photolove.com.br/login'
+             target="_blank"
+            rel="noopener noreferrer"
             className="rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-blue-600"
           >
             Entrar
